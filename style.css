@@ -313,6 +313,27 @@ form {
         width: 100%;
     }
 }
-
+@media (max-width: 800px){
+    .up-learn-more {
+        padding: 0px;
+    }
+    h1.left-h1-main {
+        font-size: 3.25rem;
+    }
+    .left-btn-main {
+        display: grid;
+        justify-content: space-around;
+    }
+    a.btn-start {
+        width: 82%;
+    }
+    a.btn-explore{
+        margin: 10px 0;
+        width: 82%;
+    }
+    .main-top {
+        margin: 0;
+    }
+}
 
 /* --- END RESPONSIVE PAGE --- */
