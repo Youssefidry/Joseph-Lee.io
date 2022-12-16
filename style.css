@@ -240,6 +240,11 @@ form {
     font-weight: 700;
     color: var(--text-color);
     transform: translateZ(0) scale(1);
+
+    
+}
+ul.menu.open {
+    z-index: 1;
 }
 /* --- END CSS MAIN --- */
 
@@ -290,11 +295,13 @@ form {
     .menu li {
         width: 100%;
         padding: 15px 0;
+        border-bottom: 1px solid var(--tw-gradient-fin);
     }
-    .menu.open{
+    .menu.open {
         right: 2%;
         display: block;
         transition: all 2s ease;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     }
     .main-top {
         flex-direction: column;
@@ -323,6 +330,7 @@ form {
     .left-btn-main {
         display: grid;
         justify-content: space-around;
+        text-align: center;
     }
     a.btn-start {
         width: 82%;
