@@ -334,6 +334,12 @@ form {
     .main-top {
         margin: 0;
     }
+    span.title-contact {
+        font-size: 2.2em;
+    }
+    h1.left-h1-main {
+        font-size: 3.25em;
+    }
 }
 
 /* --- END RESPONSIVE PAGE --- */
