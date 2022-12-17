@@ -263,7 +263,11 @@ ul.menu.open {
     }
 
 }
+
 @media (max-width : 1090px){
+    .active {
+        border: none;
+    }
     #menu-icon{
         display: block;
     }
