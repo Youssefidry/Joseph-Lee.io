@@ -4,31 +4,24 @@
     text-decoration: none;
     list-style: none;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 :root{
     --bg-color: #222327;
     --text-color: #fff;
     --main-color: #29fd53;
-    --second-color : #fda829;
-    --font-title : Uncut Sans,sans-serif;
-    --tw-gradient-to: #60a5fa;
-    --tw-gradient-from: #2563eb;
-    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --second-color : #F1B24A;
+    --font-title :'Montserrat', sans-serif;
 
-
-    --tw-gradient-start: #1f2937;
-    --tw-gradient-fin: #374151;
-    --tw-gradient-stop: var(--tw-gradient-start),var(--tw-gradient-fin);
+    
 }
 
 ::placeholder {
     color: white;
-    font-family: Inter,sans-serif;;
+    font-family: Inter,sans-serif;
 }
 /* --- START CSS HEADER --- */
 body{
-    background: var(--bg-color);
+    background-image: linear-gradient(to right top, #164a41, #326856, #518869, #75a87b, #9dc88d);
 }
 header{
     padding: 20px;
@@ -37,13 +30,14 @@ header{
 }
 header a{
     color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
 
 }
 #menu-icon{
     display: none;
 }
-.menu a{
-    padding: 0 50px;
+.menu a {
+    padding: 12px 25px;
 }
 .menu{
     display: flex;
@@ -56,14 +50,16 @@ header a{
     transition: all .50s ease;
 }
 .navbar a{
-    font-weight: 500;
-    font-size: 1.1rem;
     padding: 5px 0;
     margin: 0px 10px;
 }
 .logo{
     font-weight: 500;
     font-size: 1.1rem;
+    text-transform: uppercase;
+}
+header span{
+    color: var(--second-color);
 }
 
 header a:hover{
@@ -71,9 +67,16 @@ header a:hover{
     transition: all 0.5s ease;
     transform: translateY(5px);
 }
-.active{
-    color:  var(--second-color);
+.active {
+    color: var(--second-color);
     font-style: inherit;
+    border: 1px solid;
+    border-radius: 8px;
+}
+a.active:hover {
+    background-color: #9DC88D;
+    transition: all 1s ease-out;
+    color: white;
 }
 .navbar {
     display: flex;
@@ -83,12 +86,6 @@ i.ri-home-heart-fill {
     vertical-align: text-top;
     color: var(--second-color);
     padding: 15px;
-}
-header i{
-        vertical-align: text-top;
-        padding: 10px;
-        cursor: pointer;
-        color: var(--second-color);
 }
 #menu-icon {
     font-weight: 600;
@@ -124,9 +121,10 @@ header i{
     display: inline-block;
     border-radius: 9999px;
     padding: 10px;
-    color: rgb(156 163 175);
+    color: white;
     margin-bottom: 20px;
     margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .up-learn-more i{
     color: var(--text-color);
@@ -134,7 +132,7 @@ header i{
     line-height: 18px;
 }
 .up-learn-more a {
-    color: rgb(59 , 130 , 246);
+    color: #9DC88D;
     font-size: 14px;
     font-weight: 500;
 }
@@ -142,39 +140,45 @@ header i{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.btn-explore{
-    padding: 10px 20px 10px 20px;
-    border-radius: 4px;
-    background-image: linear-gradient(to top,var(--tw-gradient-stop));
-    color: rgb(209 , 213 , 219);
+.btn-explore {
+    padding: 10px 0 10px 20px;
+    border-radius: 25px;
+    color: white;
     margin-left: 10px;
     font-family: Inter,sans-serif;
     box-shadow: none;
-    text-size-adjust: 100%;
-    line-height: 1.3;
     font-weight: 600;
+    border: 1px solid #9DC88D;
+    box-shadow: 0 0 10px #9dc88d;
 }
-.btn-start{
-    background-image: linear-gradient(to top,var(--tw-gradient-stops));
-    padding: 10px 20px 10px 20px;
-    border-radius: 4px;
-    background-color: #2563eb;
+.btn-start {
+    padding: 10px 0px 10px 20px;
+    border-radius: 25px;
     color: white;
     font-family: Inter,sans-serif;
     font-weight: 600;
     box-shadow: none;
     text-size-adjust: 100%;
-    line-height: 1.3;
-    
+    border: 1px solid var(--second-color);
+    box-shadow: 0 0 10px var(--second-color);
 }
 main i{ 
     vertical-align: text-top;
 
 }
-.btn-start i{
+.btn-start i {
     color: white;
     font-weight: 700;
-    
+    background-color: var(--second-color);
+    padding: 11.7px;
+    border-radius: 50px;
+}
+.btn-explore i{
+        color: white;
+        font-weight: 700;
+        background-color: #9DC88D;
+        padding: 11.7px;
+        border-radius: 50px;
 }
 main {
     width: 80%;
@@ -187,7 +191,8 @@ main {
     font-family: Inter,sans-serif;
     font-size: 20px;
     line-height: 30px;
-    color: rgb(156 163 175);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -214,13 +219,14 @@ form {
 }
   
   .right-main button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #518869;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 30px;
     box-shadow: none;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     
   }
   textarea:focus, input:focus{
@@ -271,7 +277,7 @@ ul.menu.open {
         right: -100%;
         width: 270px;
         height: auto;
-        background: var(--bg-color);
+        background-image: linear-gradient(to right top, #164a41, #326856, #518869, #75a87b, #9dc88d);
         display: none;
         flex-direction: column;
         justify-content: flex-start;
@@ -289,13 +295,14 @@ ul.menu.open {
         color: var(--second-color);
         transform: translateY(5px);
     }
-    .active{
-        color: white;
+    .active {
+        color: var(--second-color);
+        font-style: inherit;
     }
     .menu li {
         width: 100%;
         padding: 15px 0;
-        border-bottom: 1px solid var(--tw-gradient-fin);
+        border-bottom: 1px solid white;
     }
     .menu.open {
         right: 2%;
@@ -328,16 +335,20 @@ ul.menu.open {
         font-size: 3.25rem;
     }
     .left-btn-main {
-        display: grid;
         justify-content: space-around;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     a.btn-start {
-        width: 82%;
+        width: 100%;
     }
-    a.btn-explore{
+    a.btn-explore {
         margin: 10px 0;
-        width: 82%;
+        width: 100%;
+        padding: 0 0 0 15px;
+        display: flex;
+        justify-content: space-between;
     }
     .main-top {
         margin: 0;
@@ -347,6 +358,11 @@ ul.menu.open {
     }
     h1.left-h1-main {
         font-size: 3.25em;
+    }
+    .btn-start {
+        padding: 0 0 0 15px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
